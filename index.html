@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+  <h1>Netflix Gifs</h1>
+</div>
+
+<form class="form-inline" id="netflixSearch">
+  <div class="form-group">
+    <label for="netflixInput">Search for a Netflix Show</label>
+    <input type="text" id="netflixInput">
+  </div>
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="Stranger Things">Stranger Things</button>
+      <button class="btn btn-primary" id="show" data-search="Narcos">Narcos</button>
+      <button class="btn btn-primary" id="show" data-search="Luke Cage">Luke Cage</button>
+      <button class="btn btn-primary" id="show" data-search="Jessica Jones">Jessica Jones</button>
+
+      <div id="myButtons"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="assets/javascript/giphy.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
